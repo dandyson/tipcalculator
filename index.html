@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CUSTOM FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+    
+    <title>Bill Calculator</title>
+</head>
+<body>
+    <div id="container">
+    <h1>Tip Calculator</h1>
+    <h5>Let me calculate the tip for you!</h5>
+    <h5>How much was the bill?</h5>
+    
+    <form>
+    <!-- USER INPUT -->
+    <input id="userAmount" type="text" placeholder="$">
+    
+    <h5>How much would you like to tip?</h5>
+    <!-- BILL OPTIONS -->
+        <select id="options">
+            <option value="0.1">10 &#37;</option>
+            <option value="0.2">20 &#37;</option>
+        </select>
+    </form>
+
+    <!-- PEOPLE AMOUNT -->
+    <h5>How many people?</h5>
+    <input type="text" id="peopleAmount" placeholder="...">
+    <button id="calculate"><span>Calculate!</span></button>
+    <!-- TOTAL TIP -->
+    <div id="totalTip">
+        <sup>$</sup><span id="tip">0.00</span>
+        <small id="each">each</small>
+    </div>
+
+</div>
+
+<script src="js/main.js"> </script>
+</body>
+</html>
